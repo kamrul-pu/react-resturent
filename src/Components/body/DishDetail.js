@@ -11,8 +11,10 @@ const DishDetail = (props) => {
                     <CardTitle>{props.dish.name}</CardTitle>
 
                     <CardText>
-                        <p>Price: {props.dish.price}/= </p>
-                        <p>{props.dish.description}</p>
+                        Price: {props.dish.price}/=
+                    </CardText>
+                    <CardText>
+                        {props.dish.description}
                     </CardText>
                     <hr />
                     <LoadComments comments={props.dish.comments} />
