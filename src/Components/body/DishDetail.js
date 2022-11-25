@@ -3,7 +3,9 @@ import { Card, CardImg, CardImgOverlay, CardBody, CardTitle, CardText } from 're
 import LoadComments from "./LoadComments";
 
 const DishDetail = (props) => {
+    document.title = "Dish Detail";
     return (
+
         <div>
             <Card style={{ marginTop: "10px" }}>
                 <CardImg top src={props.dish.image} alt={props.dish.name} />
@@ -17,7 +19,7 @@ const DishDetail = (props) => {
                         {props.dish.description}
                     </CardText>
                     <hr />
-                    <LoadComments comments={props.dish.comments} />
+                    <LoadComments comments={props.comments} />
                 </CardBody>
             </Card>
         </div>
