@@ -24,7 +24,7 @@ class Navigation extends React.Component {
                         <Collapse navbar isOpen={this.state.isNavOpen}>
                             <Nav className="mr-auto" navbar>
                                 <NavItem>
-                                    <Link to="/home" className="nav-link active">Home</Link>
+                                    <Link to="/" className="nav-link active">Home</Link>
                                 </NavItem>
                                 <NavItem>
                                     <Link to="/menu" className="nav-link">Menu</Link>

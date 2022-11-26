@@ -8,6 +8,8 @@ import { Route, Redirect } from 'react-router-dom';
 const Body = () => {
     return (
         <div>
+            {/* <Route path="/" exact component={Home1} />
+             */}
             <Route path="/" exact component={Home} />
             <Route path="/menu" exact component={Menu} />
             <Route path="/contact" exact component={Contact} />
