@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import Loading from './Loading';
 
 const mapStateToProps = (state) => {
     console.log("MapStateToProps", state);
@@ -24,7 +25,7 @@ class Home extends React.Component {
         document.title = "Resturent Demo";
         return (
             <div>
-                <h1>This is Homepage</h1>
+                <Loading />
             </div>
         );
     }

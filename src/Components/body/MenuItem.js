@@ -1,15 +1,15 @@
 import React from "react";
 import { Card, CardImg, CardImgOverlay, CardBody, CardTitle } from 'reactstrap';
-
+import { baseUrl } from "../../redux/baseUrl";
 
 const MenuItem = (props) => {
     // console.log(props);
     return (
         <div>
-            <Card className="col-4 col-md-6 col-sm-12" style={{ margin: "10px" }}>
+            <Card style={{ margin: "10px" }}>
                 <CardBody>
                     <CardImg
-                        width="100%" alt={props.dish.name} src={props.dish.image}
+                        width="100%" alt={props.dish.name} src={baseUrl + props.dish.image}
                         style={{ opacity: "0.5" }} />
                     <CardImgOverlay>
                         <CardTitle
